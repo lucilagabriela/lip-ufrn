@@ -7,14 +7,14 @@
 times = []
 libertadores = []
 rebaixados = []
-maior = 0
+maiorNome = 0
 
 for x in range(10):
     time = input('Digite o nome do time: ')
     times.append(time)
     len(times[x])
-    if len(times[x]) > maior:
-        maiorNome = len(times[x])
+    if len(times[x]) > maiorNome:
+        maiorNome = len(time[x])
 libertadores = times[:3]
 print(f'Os times do libertadores são: {libertadores}')
 rebaixados = times[-4:]
