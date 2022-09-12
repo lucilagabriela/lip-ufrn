@@ -5,11 +5,10 @@ numeros = []
 #segundoMaior = 0
 
 for x in range(4):
-    nmrs = int(input(''))
-    numeros.append(nmrs)
+  nmrs = int(input(''))
+  numeros.append(nmrs)
 
-numeros.sort()
-numeros.pop(-1)
-numeros.pop(-1)
+for c in range(2):
+	numeros.remove(max(numeros))
 
 print(numeros)

@@ -5,9 +5,8 @@ for x in range(4):
     numero = int(input(''))
     numeros.append(numero)
 
-numeros.sort()
-numeros.pop(0)
-numeros.pop(0)
+for c in range(2):
+  numeros.remove(min(numeros))
 
 for c in range(2):
     print(numeros[c])
