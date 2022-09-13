@@ -9,4 +9,5 @@ for x in range(10):
     for x in range(10):
   	    if nmr%lista[-1] == 0:
             mdc = nmr
+
 print(f'{max(lista)} {min(lista)} {mdc}')
