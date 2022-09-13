@@ -6,13 +6,12 @@
 # Imprimindo a raíz quadrada de 9 ( print (math.sqrt(9)) ) 
 # Atribuindo a raíz quadrada de 8 à variável x ( x = math.sqrt(8) )
 
-pontos1 = ()
-pontos2 = ()
-for x in range(2):
-    ponto1 = float(input(''))
-    pontos1.append(ponto1)
+import math
 
-for x in range(2):
-    ponto2 = float(input(''))
-    pontos2.append(ponto2)
-print(pontos1)
+pontos1 = ( float(input('')), float(input('')) )
+pontos2 = ( float(input('')), float(input('')) )
+
+a = (pontos2[0]-pontos1[0])**2
+b = (pontos2[0]-pontos1[0])**2
+c = math.sqrt(a+b)
+print(c)
