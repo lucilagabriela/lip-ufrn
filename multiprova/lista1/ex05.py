@@ -5,8 +5,8 @@ for x in range(4):
     numero = int(input(''))
     numeros.append(numero)
 
-for c in range(2):
+for x in range(2):
   numeros.remove(min(numeros))
 
-for c in range(2):
-    print(numeros[c])
+for x in range(2):
+    print(numeros[x])

@@ -9,3 +9,5 @@ for x in range(nmrCity):
 cidades.reverse()
 for x in range(nmrCity):
     print(cidades[x])
+
+# cidades[x] pega cada item que está na lista a partir do x

@@ -6,5 +6,5 @@ for x in range(N):
     cidade = input('') # nome da cidade
     cidades.append(cidade)
 cidades.sort() # ordem alfabética
-for c in range(N):
-    print(cidades[c])
+for x in range(N):
+    print(cidades[x]) # dentro dos [] deve haver o x do laço

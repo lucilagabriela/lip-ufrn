@@ -6,8 +6,7 @@ for x in range(3):
     nmr = int(input(''))
     numeros.append(nmr)
 
-numeros.sort()
-numeros.pop(0)
-numeros.pop(1)
+numeros.remove(max(numeros))
+numeros.remove(min(numeros))
 for c in range(1):
     print(numeros[c])
