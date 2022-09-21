@@ -3,12 +3,14 @@
 n = int(input(''))
 soma = 0
 numeros = []
+# L = list(range(1, n+1, 2))
+#L = list() = L = []
 for x in range(1, n+1, 2): # N+1 pois é para incluir o valor N
     numeros.append(x)
 
 v1 = int(input(''))
 v2 = int(input(''))
 
-for x in range(v1, v2+1):
+for x in range(v1, v2+1): #ou for x in L[v1:v2+1] ; soma += x
     soma += numeros[x]
 print(soma)

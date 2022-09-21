@@ -6,11 +6,22 @@
 #else:
 #  print(f"A letra 'a' não está em '{minha_string}'")
 
-palavra = input('')
+#palavra = input('')
+#if palavra.isdigit() == True:
+#    print('Legal')
+#elif palavra.isalpha() == True:
+#    print('Legal')
+#else:
+#    print('Chata')
 
-if palavra.isdigit() == True:
-    print('Legal')
-elif palavra.isalpha() == True:
+palavra = input('')
+digito = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+banco = 'abcdefghijklmnopqrstuvwxyz0123456789'
+legal = True
+for letra in palavra:
+    if letra in banco:
+        legal = False
+if legal:
     print('Legal')
 else:
     print('Chata')

@@ -2,9 +2,8 @@
 
 N = int(input(''))
 L1 = []
-for x in range(0, N, 2):
-    if x != 0:
-        L1.append(x)
+for x in range(2, N, 2):
+    L1.append(x)
 L2 = L1[:] # cópia da lista
 
 i1 = int(input(''))
