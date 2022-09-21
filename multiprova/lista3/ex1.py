@@ -26,4 +26,4 @@ print(*tetos)
     
 #  numeros.append(numero)
 
-#print(*(numeros))
+#print(*numeros)
