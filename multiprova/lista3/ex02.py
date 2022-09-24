@@ -1,5 +1,6 @@
 # Separando os 'perfeitos'
 # Receba do usuário uma lista de valores inteiros com n elementos. A partir desta lista, gere duas listas auxiliares. Uma contendo seus elementos que são número perfeitos e outros contendo os que não são. Um número perfeito é aquele cuja soma de seus divisores, excluindo ele mesmo, é igual ao próprio número. Por exemplo: 6 = 1 + 2 + 3
+
 n = int(input(''))
 numeros = []
 for x in range(n):

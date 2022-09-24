@@ -15,6 +15,9 @@
 # - Exemplo de Saída 2:
 # Nenhuma turma tem marcos
 
+# use split para formar uma lista a partir de uma linha da entrada
+# turma = input().split(',')
+
 turma1 = input().split(',')
 turma2 = input().split(',')
 turma3 = input().split(',')

@@ -8,6 +8,9 @@
 # - Exemplo de Saída 1:
 # ['queijo', 'cogumelo', 'pimenta', 'presunto']
 # ['cogumelo', 'presunto']
+# use split para formar uma lista a partir de uma linha da entrada
+# ingredientes = input().split()
+
 
 ingredientes = input().split()
 nãoPode = input().split()
