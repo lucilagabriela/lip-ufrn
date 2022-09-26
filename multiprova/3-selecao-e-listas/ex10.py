@@ -10,3 +10,14 @@
 # ['queijo', 'cogumelo', 'pimenta', 'presunto', 'milho']
 # use split para formar uma lista a partir de uma linha da entrada
 # pizza = input().split(',')
+
+ingredientes = input().split(',')
+addIngredientes = input().split(',')
+
+print(ingredientes)
+
+for x in addIngredientes:
+  if (x not in ingredientes):
+    ingredientes.append(x)
+ 
+print(ingredientes)

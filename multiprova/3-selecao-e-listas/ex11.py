@@ -10,3 +10,18 @@
 # ['cogumelo, 'presunto]
 # use split para formar uma lista a partir de uma linha da entrada
 # pizza = input().split()
+
+paolo = input().split()
+toni = input().split()
+osDois = []
+apenasPaolo = []
+
+for x in paolo: # verificar qual é a intersecção dos resultados
+  if (x in toni):
+    osDois.append(x)
+print(osDois)
+
+for x in paolo:
+  if(x not in toni):
+    apenasPaolo.append(x)
+print(apenasPaolo)

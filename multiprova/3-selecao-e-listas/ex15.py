@@ -17,3 +17,18 @@
 # advogado
 # - Exemplo de Saída 3:
 # Ingresso normal
+
+idade = int(input(''))
+ocupacao = input('').lower()
+
+if (idade<10 or idade>70):
+    print('Ingresso gratuito')
+elif (ocupacao=='professor'):
+    print('Ingresso com desconto')
+elif (idade<30):
+    if ocupacao=='estudante' or ocupacao=='professor':
+        print('Ingresso com desconto')
+    else:
+        print('Ingresso normal')
+else:
+    print('Ingresso normal')

@@ -14,11 +14,11 @@ sophieDiv = []
 
 for x in range(1, n+1):
   if n%x == 0:
-    divisores.append(n)
+    divisores.append(x)
 
 for x in range(1, sophie+1):
   if sophie%x == 0:
-    sophieDiv.append(sophie)
+    sophieDiv.append(x)
 
 if len(divisores) == 2 and len(sophieDiv) == 2:
   print('Numero primo de Sophie-Germain')
