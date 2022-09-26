@@ -11,5 +11,8 @@ for x in range(n):
     maior += lista[x]
     for indice, valor in enumerate(lista):
         if lista[indice] > maior:
-            diaMaior = valor
-print(diaMaior)
+            diaMaior = indice
+    if (indice != 0):
+        print(f'dia {indice}')
+    else:
+        print('não há')
