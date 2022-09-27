@@ -1,5 +1,6 @@
 # Um número frequente é um número que aparece bastante (em listas, por exemplo), mas não sempre. Você deve escrever um programa para determinar se um certo número é frequente ou não.
-# O seu programa deve ler três listas de números e em seguida um número x. Em seguida, seu programa deve informar se x é um número frequente ou não. Considere que x é um número frequente se ele aparece em todas as listas de números menos uma.# Cada lista de números será fornecida em uma linha própria, onde cada número será separado por espaços. Veja o exemplo de entrada e saída abaixo.
+# O seu programa deve ler três listas de números e em seguida um número x. Em seguida, seu programa deve informar se x é um número frequente ou não. Considere que x é um número frequente se ele aparece em todas as listas de números menos uma.
+# Cada lista de números será fornecida em uma linha própria, onde cada número será separado por espaços. Veja o exemplo de entrada e saída abaixo.
 # - Exemplo de Entrada 1:
 # 1 2 3 4
 # 5 6 7 8
@@ -16,3 +17,17 @@
 # 10 não é um número frequente
 # use split para formar uma lista a partir de uma linha da entrada
 # lista = input().split()
+
+lista1 = input().split()
+lista2 = input().split()
+lista3 = input().split()
+
+nmr = int(input())
+if 10 in lista1 and lista2:
+    print('{nmr} é um número frequente')
+elif 10 in lista1 and lista3:
+    print('{nmr} é um número frequente')
+elif 10 in lista2 and lista3:
+    print('{nmr} é um número frequente')
+else:
+    print('{nmr} não é um número frequente')
