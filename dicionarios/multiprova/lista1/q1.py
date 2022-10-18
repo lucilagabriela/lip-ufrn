@@ -30,3 +30,23 @@
 # frango
 # - Exemplo de Saída 2
 # Nenhuma pizza tem frango
+
+pizza = {
+    'nome': '[]',
+    'preco': '[]',
+    'ingredientes': '[]',
+}
+
+n = int(input()) #quantidade de pizzas
+
+for x in range(n):
+    nomePizza = input()
+    precoPizza = int(input())
+    ingredientesPizza = input()
+    pizza['nome'] = nomePizza
+    pizza['preco'] = precoPizza
+    pizza['ingredientes'] = ingredientesPizza
+
+ingrediente = input()
+
+print(ingrediente)

@@ -21,3 +21,41 @@
 # Marguerita (R$ 30): [queijo, tomate, manjericão]
 # Palmito (R$ 40): [queijo, palmito, azeitona]
 # Frango (R$ 35): [queijo, frango, cebola, milho]
+
+pizza1 = {
+    'nome': '',
+    'preco': '',
+    'ingredientes': '',
+}
+pizza2 = {
+    'nome': '',
+    'preco': '',
+    'ingredientes': '',
+}
+pizza3 = {
+    'nome': '',
+    'preco': '',
+    'ingredientes': '',
+}
+
+comando = True
+
+while comando == True:
+    nomePizza = input()
+    precoPizza = int(input())
+    ingredientesPizza = input()
+    pizza1['nome'] = nomePizza
+    pizza1['preco'] = precoPizza
+    pizza1['ingredientes'] = ingredientesPizza
+    pizza2['nome'] = nomePizza
+    pizza2['preco'] = precoPizza
+    pizza2['ingredientes'] = ingredientesPizza
+    pizza3['nome'] = nomePizza
+    pizza3['preco'] = precoPizza
+    pizza3['ingredientes'] = ingredientesPizza
+    break
+
+print(f'Pizzas pedidas:')
+print(f'pizza1['nome'] (R$pizza1['preco']): pizza1['ingredientes'] )
+print(f'pizza2['nome'] (R$pizza2['preco']): pizza2['ingredientes'] )
+print(f'pizza3['nome'] (R$pizza3['preco']): pizza3['ingredientes'] )
