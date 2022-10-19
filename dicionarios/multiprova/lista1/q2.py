@@ -22,7 +22,21 @@
 # Palmito (R$ 40): [queijo, palmito, azeitona]
 # Frango (R$ 35): [queijo, frango, cebola, milho]
 
-pizza1 = {
+
+pizzas = []
+
+nome = input()
+print('Pizzas Pedidas:')
+while nome != 'sair':
+    preco = int(input())
+    ingredientes = input().split()
+    pizza = {'nome': nome, 'preco': preco, 'ingredientes': ingredientes,}
+    pizzas.append(pizza)
+    print(f'{nome} (R$ {preco}): {ingredientes}')
+    nome = input()
+
+
+'''pizza1 = {
     'nome': '',
     'preco': '',
     'ingredientes': '',
@@ -58,4 +72,4 @@ while comando == True:
 print(f'Pizzas pedidas:')
 print(f'pizza1['nome'] (R$pizza1['preco']): pizza1['ingredientes'] )
 print(f'pizza2['nome'] (R$pizza2['preco']): pizza2['ingredientes'] )
-print(f'pizza3['nome'] (R$pizza3['preco']): pizza3['ingredientes'] )
+print(f'pizza3['nome'] (R$pizza3['preco']): pizza3['ingredientes'] )'''

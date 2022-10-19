@@ -31,11 +31,9 @@
 # - Exemplo de Saída 2
 # Nenhuma pizza tem frango
 
-pizza = {
-    'nome': '[]',
-    'preco': '[]',
-    'ingredientes': '[]',
-}
+pizzas = []
+ingredientes = []
+precos = []
 
 n = int(input()) #quantidade de pizzas
 
@@ -43,10 +41,26 @@ for x in range(n):
     nomePizza = input()
     precoPizza = int(input())
     ingredientesPizza = input()
-    pizza['nome'] = nomePizza
-    pizza['preco'] = precoPizza
-    pizza['ingredientes'] = ingredientesPizza
+    pizza = {
+        'nome': nomePizza,
+        'preco': precoPizza,
+        'ingredientes': ingredientesPizza,
+    }
+    pizzas.append(pizza)
+    ingredientes.append(ingredientesPizza)
+    precos.append(precoPizza)
 
 ingrediente = input()
+maisCara = max(precos)
 
-print(ingrediente)
+if n == 3:
+    if ingrediente not in ingredientes[0] and ingrediente not in ingredientes[1] and ingrediente not in ingredientes[2]:
+        print(f'Nenhuma pizza tem {ingrediente}')
+    else:
+        
+        print(ingrediente)
+if n == 2:
+    if ingrediente in ingredientes[0] and ingrediente in ingredientes[1]:
+        print(ingrediente)
+    else:
+        print(f'Nenhuma pizza tem {ingrediente}')

@@ -16,3 +16,19 @@
 # Joana
 # Joaquina
 # Marcos
+
+#pessoas = []
+xTot = int(input()) #quanto precisa arrecadar
+arrecAlf = {}
+
+while xTot < 100:
+    pessoa = input()
+    arrec = {
+        pessoa[0]: pessoa[1],
+    }
+    arrecAlf = sorted(arrec)
+
+print(xTot)
+print(f'Obrigado')
+for x in arrecAlf:
+    print(arrec.keys()[x])
