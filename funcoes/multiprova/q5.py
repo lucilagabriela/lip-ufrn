@@ -1,0 +1,1 @@
+# Implemente uma função f que recebe dois valores inteiros, a e b, e calcula a soma dos múltiplos de 3 no intervalo [a, b]. No seu programa  você deve ler os números inteiros x1, x2, y1, y2 e usar a função f para determinar qual intervalo ([x1, x2] ou [y1, y2]) possui a maior soma de múltiplos de 3.
